@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "A driver history tracking module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "author": "Joey Darbyshire",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
