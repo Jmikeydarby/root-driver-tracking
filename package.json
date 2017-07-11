@@ -4,11 +4,13 @@
   "description": "A driver history tracking module",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "mocha tests/*.js",
     "start": "node index.js"
   },
   "author": "Joey Darbyshire",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
