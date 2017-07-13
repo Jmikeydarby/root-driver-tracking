@@ -63,7 +63,7 @@ const processFiles = (inputFile) => {
     }
   }
   if (error === true) {
-    dataObject.error = new Error("Not a valid input File");
+    dataObject.inputerror = new Error("Not a valid input File");
   }
 
   return dataObject;

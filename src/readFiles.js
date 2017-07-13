@@ -8,8 +8,8 @@ const readFiles = (files) => {
     try {
       let data = fs.readFileSync(val, "utf8");
       dataArray[i] = fileDS(val, data, null);
-    } catch (err) {
-      dataArray[i] = fileDS(val, null, err);
+    } catch (fileNotFoundErr) {
+      dataArray[i] = fileDS(val, null, fileNotFoundErr);
     }
 
   }
@@ -17,11 +17,11 @@ const readFiles = (files) => {
 
 }
 
-function fileDS(loc, data, err) {
+function fileDS(loc, data, fileNotFoundErr) {
   return {
     loc: loc,
     data: data,
-    err: err
+    fileNotFoundErr: fileNotFoundErr
   }
 }
 

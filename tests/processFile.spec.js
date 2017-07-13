@@ -28,7 +28,7 @@ describe.only("ProcessFiles:", () => {
   // If the file isn't formatted correctly
   it("Returns an error file if the input file is not written correctly or invalid", () => {
     let returnedData = processFile(testFile[1]);
-    expect(returnedData).to.have.ownPropertyDescriptor('error');
-    expect(returnedData.error).to.be.an.instanceof(Error);
+    expect(returnedData).to.have.ownPropertyDescriptor('inputerror');
+    expect(returnedData.inputerror).to.be.an.instanceof(Error);
   });
 });
