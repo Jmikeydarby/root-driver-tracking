@@ -1,5 +1,6 @@
 //Initial file
 const readFiles = require('./src/readFiles');
+const processFiles = require('./src/processFile');
 
 /* process.argv is a node variable containing an array of all commands typed after the program start command in the command line.
 The first argument will the location of the executable of node, the second will be the location of the file you have executed
@@ -16,6 +17,7 @@ fileData.forEach( val => {
   if (val.err !== null) {
     console.log(`${val.loc} is not a valid input file or location`);
   } else {
-    console.log(`${val.loc}: ${val.data}`)
+    let processedData = processFiles(val);
+    console.log(`${val.loc} Processed Data:`, processedData);
   }
 })

@@ -1,11 +1,11 @@
-//These tests are for the command line input function via process.argv
+//These tests are for the command line input function via process.argv and /src/readFiles.js
 const { expect } = require('chai');
 const readFiles = require('../src/readFiles');
 
 describe("ReadFiles:", () => {
   let testinputdata = {
     loc: 'tests/testinput.txt',
-    data: 'Driver Rick\nTrip Rick 00:15 12:30 110.0\nDriver Morty\nDriver Summer\nTrip Morty 13:15 13:30 1.25\nTrip Morty 13:30 14:00 50.1\nTrip Summer 21:00 22:00 4.9\nTrip Summer 22:00 23:10 10\nTrip Summer 23:10 23:59 100\n',
+    data: 'Driver Rick\nTrip Rick 00:15 12:30 110.0\nDriver Morty\nDriver Summer\nTrip Morty 13:15 13:30 1.25\nTrip Morty 13:30 14:00 50.1\nTrip Summer 21:00 22:00 4.9\nTrip Summer 22:00 23:10 10\nTrip Summer 23:09 23:59 100\n',
     err: null
   }, testinput2data = {
     loc: 'tests/testinput2.txt',
