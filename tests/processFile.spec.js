@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const readFiles = require('../src/readFiles');
 const processFile = require('../src/processFile');
 
-describe.only("ProcessFiles:", () => {
+describe("ProcessFiles:", () => {
   let testFile = readFiles(['tests/testinput.txt', 'tests/testinput2.txt']),
     validReturn = {
       input: testFile[0],
