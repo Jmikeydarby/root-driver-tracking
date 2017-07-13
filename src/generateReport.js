@@ -10,11 +10,13 @@ const generateReport = (reportData) => {
   } else {
     let objKeys = Object.keys(reportData);
     let driverReports = [];
+    // Adds only the drivers to the driverReports array
     objKeys.forEach(keyName => {
       if (keyName !== "input") {
         driverReports.push(createDriverReport(keyName, reportData[keyName]));
       };
     })
+    // Sorts by most miles driven to least
     driverReports.sort((val1, val2) => {
       return val2[1] - val1[1];
     })
