@@ -55,8 +55,10 @@ const processFiles = (inputFile) => {
       case "Trip":
         addTrip(arrOfWords);
         break;
+      // If the line is empty just skip over it
       case "":
         break;
+      // Otherwise the line is Errored input
       default:
         error = true;
         break;

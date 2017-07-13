@@ -1,5 +1,5 @@
 // Takes a processed report or errored input and prints a report of all data to the screen.
-
+// I choose not to write specs for this since it only prints data to the screen.
 
 const generateReport = (reportData) => {
   let input = reportData.hasOwnProperty("input") ? reportData.input : reportData;

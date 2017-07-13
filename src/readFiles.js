@@ -17,6 +17,7 @@ const readFiles = (files) => {
 
 }
 
+// Probably don't need this function, but is more functional and cleaner
 function fileDS(loc, data, fileNotFoundErr) {
   return {
     loc: loc,
